@@ -1,0 +1,30 @@
+baseURL = "http://hugo.api/"
+languageCode = "en-us"
+title = "rougon"
+
+[outputs]
+  page = ["json"]
+  home = ["json", "hta", "404"]
+  section = ["json", "hta", "404"]
+  taxonomy = ["json"]
+  taxonomyTerm = [ "json" ]
+
+[taxonomies]
+  sport = "sports"
+
+[mediaTypes]
+[mediaTypes."text/htaccess"]
+suffix = "htaccess"
+
+[outputFormats]
+[outputFormats.hta]
+mediaType = "text/htaccess"
+baseName = ""
+isPlainText = true
+
+[outputFormats.404]
+mediaType = "application/json"
+baseName = "404"
+
+[permalinks]
+  page = "/:section/:title/"

@@ -1,0 +1,9 @@
+{
+    "title": "{{ .Title }}"
+    ,"type": "{{ .Type }}"
+    ,"sports" : "{{ with .Params.sports }}{{ delimit . ", "}}{{ end }}"
+    ,"year" : "{{ .Params.year }}"
+    ,"contact" : "{{ .Params.emergency_contact }}"
+    ,"permalink" : "{{ replace .Permalink "index.json" "" }}"
+    ,"urgly_permalink" : "{{ .Permalink }}"
+}
