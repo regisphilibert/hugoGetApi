@@ -1,4 +1,0 @@
-{
-	"error" : "202"
-	,"message" : "We could not find any {{ .Section }}"
-}
