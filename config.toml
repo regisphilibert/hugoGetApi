@@ -1,16 +1,27 @@
-baseURL = "http://hugo.api/"
+baseURL = "/"
 languageCode = "en-us"
 title = "rougon"
 
 [outputs]
-  page = ["json"]
-  home = ["json"]
+  page = ["json","players"]
+  home = ["json", "redirect"]
+  teams = ["json"]
   section = ["json"]
-  taxonomy = ["json"]
-  taxonomyTerm = [ "json" ]
+  taxonomy = ["json", "players"]
 
+[mediaTypes."text/netlify"]
+suffix = ""
+delimiter = ""
+
+[outputFormats.players]
+baseName = "players"
+mediatype ="application/json"
+[outputFormats.redirect]
+mediatype = "text/netlify"
+baseName = "_redirects"
 [taxonomies]
   sport = "sports"
+  training = "trainings"
 
 [permalinks]
   page = "/:section/:title/"
