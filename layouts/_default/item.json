@@ -1,0 +1,7 @@
+{
+    "title": "{{ .Title }}",
+    "date": "{{ .Date }}",
+    "type": "{{ .Type }}",
+    "permalink" : "{{ .Permalink }}",
+    "summary" : "{{ .Summary }}"
+}

@@ -1,0 +1,12 @@
+{{ define "response" }}
+{{- $players := where (where .Site.RegularPages "Type" "players") "Params.team" .Params.uniqueID -}}
+    {
+        "team" : "{{ .Title }}",
+        "count" : "{{ len $players }}"
+        ,"players" : [
+        {{ range $i, $e := $players }}
+            {{ if $i }}, {{ end }}{{ .Render "item" }}
+        {{ end }}
+        ]
+    }
+{{ end }}

@@ -1,5 +1,6 @@
 ---
 title: Sly Turtles
+uniqueID: turtles
 mascot: Turtle Todd
 sports: ["football"]
 ---

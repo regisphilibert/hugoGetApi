@@ -1,0 +1,12 @@
+{
+    "name": "{{ .Title }}",
+    "contact" : "{{ .Params.emergency_contact }}",
+    "permalink" : "{{ .Permalink }}",
+    "year" : "{{ .Params.year }}"
+    {{ range $index, $e := .Site.Taxonomies }}
+    	{{ with $.Param $index }}
+    		,"{{ $index }}" : "{{ delimit . ", "}}"
+    	{{ end }}
+    {{ end }}
+   	
+}

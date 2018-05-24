@@ -1,5 +1,0 @@
-{
-    "name": "{{ .Title }}",
-    "contact" : "{{ .Params.emergency_contact }}",
-    "permalink" : "{{ .Permalink }}"
-}
