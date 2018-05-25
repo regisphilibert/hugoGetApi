@@ -21,7 +21,7 @@ mediatype = "text/netlify"
 baseName = "_redirects"
 [taxonomies]
   sport = "sports"
-  training = "trainings"
+  practice = "practices"
 
 [permalinks]
   page = "/:section/:title/"

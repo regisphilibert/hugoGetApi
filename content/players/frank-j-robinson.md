@@ -5,7 +5,7 @@ age: 17
 emergency_contact: +1 (555) 555 5555
 sports: ["soccer", "baseball"]
 team: turtles
-trainings: ["Monday", "Thursday"]
+practices: ["Monday", "Thursday"]
 year: "junior"
 ---
 
