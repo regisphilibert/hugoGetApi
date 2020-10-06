@@ -9,6 +9,7 @@ ignoreErrors = ["error-output-taxonomy"]
   teams = ["json"]
   section = ["json"]
   taxonomy = ["json", "players"]
+  term = ["json"]
 
 [mediaTypes."text/netlify"]
 suffixes = ""
