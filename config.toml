@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "rougon"
+ignoreErrors = ["error-output-taxonomy"]
 
 [outputs]
   page = ["json","players"]
@@ -10,7 +11,7 @@ title = "rougon"
   taxonomy = ["json", "players"]
 
 [mediaTypes."text/netlify"]
-suffix = ""
+suffixes = ""
 delimiter = ""
 
 [outputFormats.players]
